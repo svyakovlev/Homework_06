@@ -35,5 +35,10 @@ public class Main {
         System.out.println("Минимальная сумма трат за день составила " + min + " рублей.");
         System.out.println("Максимальная сумма трат за день составила " + max + " рублей.");
 
+// Задание №3
+        double rubles = (double) summ / arr.length;
+        System.out.println("Средняя сумма трат за месяц составила " + rubles + " рублей.");
+
+
     }
 }
