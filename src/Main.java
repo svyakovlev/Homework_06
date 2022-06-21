@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Arrays;
 
 public class Main {
@@ -28,7 +29,7 @@ public class Main {
             if (arr[i] > max) {
                 max = arr[i];
             }
-            if (arr[i] < min) {
+            else if (arr[i] < min) {
                 min = arr[i];
             }
         }
@@ -37,7 +38,8 @@ public class Main {
 
 // Задание №3
         double rubles = (double) summ / arr.length;
-        System.out.println("Средняя сумма трат за месяц составила " + rubles + " рублей.");
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        System.out.println("Средняя сумма трат за месяц составила " + decimalFormat.format(rubles) + " рублей.");
 
 // Задание №4
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
